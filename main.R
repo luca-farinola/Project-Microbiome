@@ -8,7 +8,6 @@ setwd("C:/Users/lukfa/OneDrive/Desktop/Project-Microbiome")
 source("scripts/libraries.R")
 source("scripts/filter_and_normalize.R")
 source("scripts/mean_centering.R")
-source("scripts/3dplot.R")
 
 # file importing 
 asv <- read.csv("files/finASV.csv", header = TRUE, row.names = 1)
