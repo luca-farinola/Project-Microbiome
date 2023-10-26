@@ -56,15 +56,18 @@ pcaScorePlot(
   color = "time_point"
 )
 
-
 # Unsupervised Random Forest
 
-seed(123)
+set.seed(123)
+
 iris.urf <- randomForest(mean_centered)
 MDSplot(iris.urf,metadata$patient_type,k=5,palette=NULL)
 
 a <- MDSplot(iris.urf,metadata$patient_type,k=5,palette=NULL)
 MDS <- a$points
+
+patient_type_mapping <- c("HC" = "green","NCWS" = "red")
+patient_type_labels <- patient_type_mapping[metadata$patient_type]
 
 plot3d(MDS[,3:5], xlab="Component 3", ylab="Component 4", zlab="Component 5", type="n", box=F, axes=F)
 
