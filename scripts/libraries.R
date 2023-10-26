@@ -1,7 +1,6 @@
 # List of required libraries
-required_libraries <- c("phyloseq", "microbiome", "knitr", "limpca", 
-                        "pheatmap", "dplyr", "purrr", "rgl", 
-                        "randomForest", "readxl")
+required_libraries <- c("phyloseq", "microbiome", "knitr", 
+                        "dplyr", "purrr", "rgl","randomForest", "readxl")
 
 # Function to check and install libraries
 check_install_library <- function(library_name) {
@@ -20,8 +19,6 @@ invisible(sapply(required_libraries, check_install_library))
 library(phyloseq)
 library(microbiome)
 library(knitr)
-library(limpca)
-library(pheatmap)
 library(dplyr)
 library(purrr)
 library(rgl)
