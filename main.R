@@ -28,6 +28,9 @@ pcaScorePlot(
   color = "patient", shape = "patient_type"
 )
 
+# perform per patient mean centering 
+
+
 
 
 
