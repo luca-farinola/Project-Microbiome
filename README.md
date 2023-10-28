@@ -10,14 +10,25 @@
 
 ### Data Preprocessing
 
-Filtering: Describe the criteria used for filtering the data.
-Normalization: Explain the normalization technique applied to standardize the data.
-Inverse Hyperbolic Transformation: Briefly discuss the purpose and method of the inverse hyperbolic transformation.
-Mean Centering: Explain how mean centering was implemented to center the data around its mean.
+* Filtering: (filter_and_normalize.R)
+  * Sub 5% prevalence filtering (i.e., an ASV should be present in at least 5% of samples)
+  * Sub 0.01% abundance filtering (the abundance across all samples of a given ASV should be at least 0.01%)
+
+* Normalization: Performed PQN normalizzation  (filter_and_normalize.R)
+* Inverse Hyperbolic Transformation: function in R asinh()
+* Mean Centering: per patient mean centering to remove variation  (mean_centering.R)
+* Unsupervised Random Forest (using randomForest version 4.7.1.1)
+
 ### Visualization
 
 Explain the visualization techniques used, namely PCA and MDS:
 
-PCA (Principal Component Analysis): Describe how PCA was applied to reduce the dimensionality of the data and visualize it in a lower-dimensional space.
-MDS (Multidimensional Scaling): Explain how MDS was used to visualize the proximity measures obtained from the unsupervised random forest.
-Results : Summarize the results obtained from your analysis. Highlight any insights gained from the visualizations and the impact of the preprocessing techniques on the data.
+* PCA by SvD (Principal Component Analysis by singular Value Decomposition): (using limpca version 0.99.1)
+* MDS (Multidimensional Scaling): From proximity
+
+## Next step 
+
+verify the influence of more variables through ASCA (limpca) 
+
+
+!! to download limpca package --> remotes::install_github(“ManonMartin/limpca”, dependencies = TRUE)
