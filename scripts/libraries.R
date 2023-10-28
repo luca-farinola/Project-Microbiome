@@ -1,6 +1,5 @@
 # List of required libraries
-required_libraries <- c("knitr", "limpca", 
-                        "dplyr", "purrr", "rgl","randomForest", "readxl")
+required_libraries <- c("knitr", "dplyr", "purrr", "rgl","randomForest", "readxl")
 
 # Function to check and install libraries
 check_install_library <- function(library_name) {
