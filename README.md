@@ -1,4 +1,4 @@
- <h3 align="center">DIseAse-MOdule-Detection-DIAMOND-algorithm-in-Parkinson-Disease</h3>
+ <h3 align="center">Microbiome Project</h3>
 
   <p align="center">
     Project for Scientific Programming
@@ -28,7 +28,7 @@ Explain the visualization techniques used, namely PCA and MDS:
 
 ## Next step 
 
-verify the influence of more variables through ASCA (limpca) 
+verify the influence of more variables through ASCA (limpca), extract relevant ASV 
 
 
 !! to download limpca package --> remotes::install_github(“ManonMartin/limpca”, dependencies = TRUE)
